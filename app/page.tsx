@@ -9,6 +9,8 @@ import Textfield from "@mui/material/TextField"
 import tv from "./images/tv.png"
 import phone from "./images/mobile-0819.jpg"
 
+
+
 export default function Home() {
   return (<>
     <main className="h-screen">
@@ -16,14 +18,14 @@ export default function Home() {
       {/* first_section */}
       <section className="text-white text-center border-b-8 border-b-slate-800 h-4/5 bg-slate-400">
 
-        <Image className="object-cover h-full brightness-50" src={bigBack} />
+        <Image className="object-cover h-full brightness-50" src={bigBack} alt=''/>
       <section className="px-6 py-6 absolute top-1">
 
 
         <div className="mb-20 flex justify-between">
-        <Image src={logo} width={100} />
+        <Image src={logo} alt='' width={100} />
 
-        <Button className="bg-red-600 font-bold" typography={{ variantMapping: { button: 'span' } }} size='small' variant='contained'>S<span className="text-lowercase">ign in</span></Button>
+        <Button className="bg-red-600 font-bold" size='small' variant='contained'>Sign in</Button>
 
         </div>
 
