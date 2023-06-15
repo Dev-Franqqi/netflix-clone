@@ -1,113 +1,112 @@
-import Image from 'next/image'
+"use client"
+
+import Image from "next/image"
+import logo from "./images/netflixlogo.png"
+import bigBack from "./images/largeimage.jpg"
+import Button from "@mui/material/Button/Button"
+import { Typography } from "@mui/material"
+import Textfield from "@mui/material/TextField"
+import tv from "./images/tv.png"
+import phone from "./images/mobile-0819.jpg"
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+  return (<>
+    <main className="h-screen">
+
+      {/* first_section */}
+      <section className="text-white text-center border-b-8 border-b-slate-800 h-4/5 bg-slate-400">
+
+        <Image className="object-cover h-full brightness-50" src={bigBack} />
+      <section className="px-6 py-6 absolute top-1">
+
+
+        <div className="mb-20 flex justify-between">
+        <Image src={logo} width={100} />
+
+        <Button className="bg-red-600 font-bold" typography={{ variantMapping: { button: 'span' } }} size='small' variant='contained'>S<span className="text-lowercase">ign in</span></Button>
+
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <Typography align='center'className='font-bold text-3xl' variant='h1'>Unlimited movies, Tv shows, and more</Typography>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <Typography align='center' className="mt-2" paragraph>Watch anywhere. Cancel anytime.</Typography>
+         
+         <Typography align='center' className='px-10 mt-1' paragraph>Ready to watch? Enter your email to create or restart your membership.</Typography>
+        <div className="flex justify-center">
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+       <Textfield className='bg-white rounded px-2  w-full '  InputLabelProps={{
+    className: ' ml-4 mt-1 mb-3', // Add Tailwind CSS classes here
+  }} variant='standard' label='Email address'/>
+     
+        </div>
+        <Button  size='large' className="mx-auto mt-3 font-bold py-3 w-2/5 bg-red-600 block text-white text-center hover:bg-red-600">Get Started ></Button>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+      
+      </section>
+      </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+
+      {/* second section */}
+
+      <section className="bg-black h-fit border-b-8 border-b-slate-800 px-8 py-6 text-white text-center">
+
+        <Typography className="font-bold text-3xl mt-10" align='center' variant='h2'>Enjoy on your TV</Typography>
+        <Typography align='center'className="mt-3">Watch on Smart Tvs, Playstatio, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</Typography>
+        <Image src={tv} alt=''/>
+      
+      </section>
+
+
+      {/* third section */}
+
+      <section className="text-white text-center bg-black border-b-8 border-b-slate-800 py-6 px-8">
+        <Typography className="text-3xl mt-10 font-bold mb-2" variant="h3" align='center'>Download your shows to watch offline</Typography>
+        
+
+        <Typography align='center' paragraph>
+          Save your favorites easily and always have something to watch.
+        </Typography>
+
+        <Image src={phone} alt='' />
+
+      </section>
+
+
+      {/* fourth section */}
+
+      <section className='text-white text-center bg-black border-b-8 border-b-slate-800 py-8 px-8'> 
+
+    <Typography className='text-3xl font-bold mt-8 mb-2' variant='h3' align='center'>Watch everywhere</Typography>
+
+    <Typography paragraph align='center'>Stream unlimited movies and TV shows on your phone tabet, laptop, and TV.</Typography>
+
+    
+
+      </section>
+
+
+
+      {/* fifth section */}
+
+      <section className='text-white text-center py-8 px-12 border-b-8 bg-black border-b-slate-800'>
+
+        <Typography className='text-3xl font-bold mb-3 mt-8' align='center' variant='h3'>
+          Create profiles for kids
+        </Typography>
+
+        <Typography paragraph align='center'>
+
+          Send kids on adventures with their favorite characters in a space made just for them--free with your membership
+
+        </Typography>
+
+      </section>
+
+      
+
     </main>
+  </>
+
+  
   )
 }
