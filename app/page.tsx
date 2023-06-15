@@ -39,7 +39,7 @@ export default function Home() {
   }} variant='standard' label='Email address'/>
      
         </div>
-        <Button  size='large' className="mx-auto mt-3 font-bold py-3 w-2/5 bg-red-600 block text-white text-center hover:bg-red-600">Get Started ></Button>
+        <Button  size='large' className="mx-auto mt-3 font-bold py-3 w-2/5 bg-red-600 block text-white text-center hover:bg-red-600">Get Started </Button>
 
       
       </section>
