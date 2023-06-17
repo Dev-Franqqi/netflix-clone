@@ -24,7 +24,7 @@ export default function Home() {
         <div className="mb-20 flex justify-between">
         <Image src={logo} alt='' width={100} />
 
-        <Button className="bg-red-600 font-bold rounded-md px-2" size='small' variant='contained'>Sign in</Button>
+        <Button className="bg-red-600 font-bold rounded-md px-2">Sign in</Button>
 
         </div>
 
