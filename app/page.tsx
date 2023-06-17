@@ -3,8 +3,7 @@
 import Image from "next/image"
 import logo from "./images/netflixlogo.png"
 import bigBack from "./images/largeimage.jpg"
-import Button from "@mui/material/Button/Button"
-import { Typography } from "@mui/material"
+import { Button } from "@mui/base"
 import Textfield from "@mui/material/TextField"
 import tv from "./images/tv.png"
 import phone from "./images/mobile-0819.jpg"
@@ -25,15 +24,15 @@ export default function Home() {
         <div className="mb-20 flex justify-between">
         <Image src={logo} alt='' width={100} />
 
-        <Button className="bg-red-600 font-bold" size='small' variant='contained'>Sign in</Button>
+        <Button className="bg-red-600 font-bold rounded-md px-2" size='small' variant='contained'>Sign in</Button>
 
         </div>
 
-        <Typography align='center'className='font-bold text-3xl' variant='h1'>Unlimited movies, Tv shows, and more</Typography>
+        <h1 className='font-bold text-3xl' >Unlimited movies, Tv shows, and more</h1>
 
-        <Typography align='center' className="mt-2" paragraph>Watch anywhere. Cancel anytime.</Typography>
+        <p className="mt-2">Watch anywhere. Cancel anytime.</p>
          
-         <Typography align='center' className='px-10 mt-1' paragraph>Ready to watch? Enter your email to create or restart your membership.</Typography>
+         <p  className='px-10 mt-1'>Ready to watch? Enter your email to create or restart your membership.</p>
         <div className="flex justify-center">
 
        <Textfield className='bg-white rounded px-2  w-full '  InputLabelProps={{
@@ -41,7 +40,7 @@ export default function Home() {
   }} variant='standard' label='Email address'/>
      
         </div>
-        <Button  size='large' className="mx-auto mt-3 font-bold py-3 w-2/5 bg-red-600 block text-white text-center hover:bg-red-600">Get Started </Button>
+        <Button  className="mx-auto mt-3 font-bold py-3 w-2/5 bg-red-600 block rounded-md text-white text-center hover:bg-red-600">Get Started </Button>
 
       
       </section>
@@ -52,8 +51,8 @@ export default function Home() {
 
       <section className="bg-black h-fit border-b-8 border-b-slate-800 px-8 py-6 text-white text-center">
 
-        <Typography className="font-bold text-3xl mt-10" align='center' variant='h2'>Enjoy on your TV</Typography>
-        <Typography align='center'className="mt-3">Watch on Smart Tvs, Playstatio, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</Typography>
+        <h2 className="font-bold text-3xl mt-10">Enjoy on your TV</h2>
+        <p className="mt-3">Watch on Smart Tvs, Playstatio, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
         <Image src={tv} alt=''/>
       
       </section>
@@ -62,12 +61,12 @@ export default function Home() {
       {/* third section */}
 
       <section className="text-white text-center bg-black border-b-8 border-b-slate-800 py-6 px-8">
-        <Typography className="text-3xl mt-10 font-bold mb-2" variant="h3" align='center'>Download your shows to watch offline</Typography>
+        <h3 className="text-3xl mt-10 font-bold mb-2"  >Download your shows to watch offline</h3>
         
 
-        <Typography align='center' paragraph>
+        <p>
           Save your favorites easily and always have something to watch.
-        </Typography>
+        </p>
 
         <Image src={phone} alt='' />
 
@@ -78,9 +77,9 @@ export default function Home() {
 
       <section className='text-white text-center bg-black border-b-8 border-b-slate-800 py-8 px-8'> 
 
-    <Typography className='text-3xl font-bold mt-8 mb-2' variant='h3' align='center'>Watch everywhere</Typography>
+    <h3 className='text-3xl font-bold mt-8 mb-2' >Watch everywhere</h3>
 
-    <Typography paragraph align='center'>Stream unlimited movies and TV shows on your phone tabet, laptop, and TV.</Typography>
+    <p>Stream unlimited movies and TV shows on your phone tabet, laptop, and TV.</p>
 
     
 
@@ -92,15 +91,15 @@ export default function Home() {
 
       <section className='text-white text-center py-8 px-12 border-b-8 bg-black border-b-slate-800'>
 
-        <Typography className='text-3xl font-bold mb-3 mt-8' align='center' variant='h3'>
+        <h3 className='text-3xl font-bold mb-3 mt-8' >
           Create profiles for kids
-        </Typography>
+        </h3>
 
-        <Typography paragraph align='center'>
+        <p>
 
           Send kids on adventures with their favorite characters in a space made just for them--free with your membership
 
-        </Typography>
+        </p>
 
       </section>
 
