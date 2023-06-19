@@ -1,11 +1,16 @@
 "use client"
 
 import Image from "next/image"
+import Styles from "./components/style.module.css"
 import logo from "./images/netflixlogo.png"
 import bigBack from "./images/largeimage.jpg"
 import { Button } from "@mui/base"
+  import {Input} from "@mui/base"
 import Textfield from "@mui/material/TextField"
 import tv from "./images/tv.png"
+import Kids from "./images/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png"
+
+
 import phone from "./images/mobile-0819.jpg"
 
 
@@ -15,29 +20,41 @@ export default function Home() {
     <main className="h-screen">
 
       {/* first_section */}
-      <section className="text-white text-center border-b-8 border-b-slate-800 h-4/5 bg-slate-400">
+      <section className="text-white text-center w-screen border-b-8 border-b-slate-800 h-4/5 bg-slate-400">
 
         <Image className="object-cover h-full brightness-50" src={bigBack} alt=''/>
-      <section className="px-6 py-6 absolute top-1">
+      <section className="px-4 py-6 mx-auto absolute top-1">
 
 
-        <div className="mb-20 flex justify-between">
+        <div className="mb-20 mx-auto px-2 flex justify-between">
         <Image src={logo} alt='' width={100} />
 
         <Button className="bg-red-600 font-bold rounded-md px-2">Sign in</Button>
 
         </div>
 
-        <h1 className='font-bold text-3xl' >Unlimited movies, Tv shows, and more</h1>
+        <h1 className='font-bold text-4xl' >Unlimited movies, Tv shows, and more</h1>
 
-        <p className="mt-2">Watch anywhere. Cancel anytime.</p>
+        <p className="mt-2 mb-2 text-lg">Watch anywhere. Cancel anytime.</p>
          
-         <p  className='px-10 mt-1'>Ready to watch? Enter your email to create or restart your membership.</p>
+         <p  className='px-12 mt-1'>Ready to watch? Enter your email to create or restart your membership.</p>
         <div className="flex justify-center">
 
-       <Textfield className='bg-white rounded px-2  w-full '  InputLabelProps={{
-    className: ' ml-4 mt-1 mb-3', // Add Tailwind CSS classes here
-  }} variant='standard' label='Email address'/>
+       <Textfield type="email" className={Styles.inp}       sx={{
+        '& .MuiInputLabel-root': {
+          color: '#ffffff', // Set the label text color to white
+        },
+        '& .MuiInputLabel-root.Mui-focused': {
+          color: '#ffffff', // Set the label text color to white even when focused
+        },
+        '& .MuiInputBase-root': {
+          color: '#ffffff', // Set the input text color to white
+        },
+        '& .MuiInputBase-root.Mui-focused': {
+          color: '#ffffff', // Set the input text color to white when focused
+        },
+      }}
+ variant="standard" label='Email address'  />
      
         </div>
         <Button  className="mx-auto mt-3 font-bold py-3 w-2/5 bg-red-600 block rounded-md text-white text-center hover:bg-red-600">Get Started </Button>
@@ -100,6 +117,13 @@ export default function Home() {
           Send kids on adventures with their favorite characters in a space made just for them--free with your membership
 
         </p>
+        <Image src={Kids} alt='' />
+
+      </section>
+
+
+      <section className="text-white text-center py-8 px-12 border-b-8 bg-black border-b-slate-800">
+        <h3 className="text-3xl font-bold mb-3 mt-8">Frequently Asked Questions</h3>
 
       </section>
 

@@ -1,0 +1,21 @@
+/* styles.css */
+
+.inp {
+    border: 1px solid rgb(123, 123, 123);
+    transition: border-color 0.3s;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    width:90%;
+    margin-top:1rem;
+    padding: 2px 10px;
+
+  }
+  
+  .inp:focus {
+    border-color: white;
+  }
+  
+  .inp::placeholder {
+    color: white;
+  }
+  
