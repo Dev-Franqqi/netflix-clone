@@ -11,6 +11,14 @@
 
   }
   
+
+  @media (min-width: 1024px) {
+    /* Adjust the width for screens with a minimum width of 1024px (laptop screens) */
+    .inp {
+      width: 40%;
+    }
+  }
+
   .inp:focus {
     border-color: white;
   }
@@ -18,4 +26,6 @@
   .inp::placeholder {
     color: white;
   }
+
+
   

@@ -17,30 +17,33 @@ import phone from "./images/mobile-0819.jpg"
 
 export default function Home() {
   return (<>
-    <main className="h-screen">
+    <main className="h-screen w-screen">
 
       {/* first_section */}
-      <section className="text-white text-center w-screen border-b-8 border-b-slate-800 h-4/5 bg-slate-400">
+      <section className="text-white text-center md:h-screen w-screen border-b-8 border-b-slate-800 h-4/5 bg-slate-400">
 
-        <Image className="object-cover h-full brightness-50" src={bigBack} alt=''/>
-      <section className="px-4 py-6 mx-auto absolute top-1">
+        <Image className=" object-cover h-full brightness-50" src={bigBack} alt=''/>
+      <section className="px-4 w-screen  mt-10 py-6 mx-auto absolute top-1">
 
 
-        <div className="mb-20 mx-auto px-2 flex justify-between">
-        <Image src={logo} alt='' width={100} />
+        <div className="mb-20 w-full mx-auto px-5 flex justify-between md:px-40">
+        <Image src={logo} alt=''  width={150} />
+       
 
-        <Button className="bg-red-600 font-bold rounded-md px-2">Sign in</Button>
+        <Button className="bg-red-600 rounded-md h-fit py-1 px-2 w-fit ">Sign in</Button>
 
         </div>
 
-        <h1 className='font-bold text-4xl' >Unlimited movies, Tv shows, and more</h1>
+        <h1 className='font-bold md:font-extrabold text-4xl md:mt-40 md:text-5xl' >Unlimited movies, Tv shows, and more</h1>
 
-        <p className="mt-2 mb-2 text-lg">Watch anywhere. Cancel anytime.</p>
+        <p className="mt-2 mb-2 text-lg md:font-semibold md:text-2xl md:mt-4">Watch anywhere. Cancel anytime.</p>
          
-         <p  className='px-12 mt-1'>Ready to watch? Enter your email to create or restart your membership.</p>
-        <div className="flex justify-center">
+         <p  className='px-12 mt-1 md:font-semibold md:text-xl'>Ready to watch? Enter your email to create or restart your membership.</p>
+         <div className="md:w-full md:flex md:justify-around">
 
-       <Textfield type="email" className={Styles.inp}       sx={{
+        <div className="flex border-3 border-black w-full justify-center">
+        
+       <Textfield type="email" className={Styles.inp}   sx={{
         '& .MuiInputLabel-root': {
           color: '#ffffff', // Set the label text color to white
         },
@@ -57,7 +60,8 @@ export default function Home() {
  variant="standard" label='Email address'  />
      
         </div>
-        <Button  className="mx-auto mt-3 font-bold py-3 w-2/5 bg-red-600 block rounded-md text-white text-center hover:bg-red-600">Get Started </Button>
+        <Button className="mx-auto mt-3 font-bold py-3 w-2/5 bg-red-600 block rounded-md text-white text-center hover:bg-red-600 md:w-1/5 md:relative -left-72">Get Started </Button>
+        </div>
 
       
       </section>
@@ -66,10 +70,13 @@ export default function Home() {
 
       {/* second section */}
 
-      <section className="bg-black h-fit border-b-8 border-b-slate-800 px-8 py-6 text-white text-center">
+      <section className="w-full bg-black h-fit border-b-8 border-b-slate-800 px-8 py-6 text-white text-center md:flex ">
+        <div className="md:w-3/5 md:pt-20 md:px-32 md:text-left">
 
-        <h2 className="font-bold text-3xl mt-10">Enjoy on your TV</h2>
-        <p className="mt-3">Watch on Smart Tvs, Playstatio, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        <h2 className="font-bold text-3xl mt-10 md:text-5xl md:font-extrabold">Enjoy on your TV</h2>
+        <p className="mt-3 md:text-2xl">Watch on Smart Tvs, Playstatio, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+
         <Image src={tv} alt=''/>
       
       </section>
@@ -77,15 +84,22 @@ export default function Home() {
 
       {/* third section */}
 
-      <section className="text-white text-center bg-black border-b-8 border-b-slate-800 py-6 px-8">
-        <h3 className="text-3xl mt-10 font-bold mb-2"  >Download your shows to watch offline</h3>
+      <section className="text-white w-full text-center bg-black border-b-8 border-b-slate-800 py-6 px-8 md:flex  md:justify-center">
+      <div className="md:flex w-4/5 md:flex-row-reverse">
+
+        <div className="md:text-left  md:w-2/5">
+
+        <h3 className="text-3xl mt-10 font-bold mb-2 md:text-extrabold md:text-5xl"  >Download your shows to watch offline</h3>
         
 
-        <p>
+        <p className="md:text-2xl">
           Save your favorites easily and always have something to watch.
         </p>
+        </div>
 
         <Image src={phone} alt='' />
+      </div>
+
 
       </section>
 
