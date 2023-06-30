@@ -20,14 +20,15 @@ export default function Home() {
     <main className="h-screen w-screen">
 
       {/* first_section */}
-      <section className="text-white text-center md:h-screen w-screen border-b-8 border-b-slate-800 h-4/5 bg-slate-400">
+      <section className="text-white   text-center md:h-screen w-screen border-b-8 border-b-slate-800 h-5/6 bg-slate-400">
 
         <Image className=" object-cover h-full brightness-50" src={bigBack} alt=''/>
-      <section className="px-4 w-screen  mt-10 py-6 mx-auto absolute top-1">
+      <section className="px-4 w-screen h-full mt-10 py-6 mx-auto absolute top-1">
 
 
         <div className="mb-20 w-full mx-auto px-5 flex justify-between md:px-40">
-        <Image src={logo} alt=''  width={150} />
+        <Image src={logo} alt=''className="md:w-36"  width={100} />
+        {/* <Image src={logo} alt=''className=""  width={150} /> */}
        
 
         <Button className="bg-red-600 rounded-md h-fit py-1 px-2 w-fit ">Sign in</Button>
@@ -60,7 +61,7 @@ export default function Home() {
  variant="standard" label='Email address'  />
      
         </div>
-        <Button className="mx-auto mt-3 font-bold py-3 w-2/5 bg-red-600 block rounded-md text-white text-center hover:bg-red-600 md:w-1/5 md:relative -left-72">Get Started </Button>
+        <Button className="mx-auto mt-3 mb-4 font-bold py-3 w-2/5 bg-red-600 block rounded-md text-white text-center hover:bg-red-600 md:w-1/5 md:relative -left-72">Get Started </Button>
         </div>
 
       
