@@ -25,6 +25,9 @@ export default function Dropdown() {
             always something new to discover and new TV shows and movies are
             added every week!
           </p>
+
+          </AccordionContent>
+          </AccordionItem>
       <AccordionItem className="border-0 mb-2" value="item-2">
         <AccordionTrigger className="md:px-10 px-2 hover:no-underline font-normal md:text-2xl text-left text-lg bg-neutral-800 mb-1">How much does Netflix cost?</AccordionTrigger>
         <AccordionContent className="text-left py-4 bg-neutral-800 px-10">
