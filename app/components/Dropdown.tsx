@@ -79,6 +79,27 @@ export default function Dropdown() {
             </Typography>
           </AccordionDetails>
         </Accordion>
+
+        <Accordion className='mb-3' expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+          <AccordionSummary
+            expandIcon={<AddOutlinedIcon className="text-white" />}
+            aria-controls="panel4bh-content"
+            id="panel4bh-header"
+            className='bg-neutral-800  text-white'
+          > 
+            <Typography className='md:text-2xl md:py-3 font-medium'>
+            How do i cancel?
+             
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails className=' bg-neutral-800 text-white'>
+            <Typography className='md:text-2xl text-left'>
+            Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+          
+            </Typography>
+          
+          </AccordionDetails>
+        </Accordion>
       </>
     );
   }
