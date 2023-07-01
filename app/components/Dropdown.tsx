@@ -9,15 +9,22 @@ import {
 export default function Dropdown() {
   return (
     <Accordion type="single" collapsible className={Style.almostFull}>
-      <AccordionItem className="border-0 mb-2" value="item-1">
-        <AccordionTrigger className="md:px-10 px-2 md:py-6 hover:no-underline font-normal md:text-2xl text-left text-lg bg-neutral-800 mb-1">What is Netflix?</AccordionTrigger>
+    <AccordionItem className="border-0 mb-2" value="item-1">
+        <AccordionTrigger className="md:px-10 px-2 md:py-6 hover:no-underline font-normal md:text-2xl text-left text-lg bg-neutral-800 mb-1">
+          What is Netflix?
+        </AccordionTrigger>
         <AccordionContent className="text-left py-4 bg-neutral-800 px-10">
-          <p className="text-lg md:text-2xl">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
-          <p className="text-lg md:text-2xl mt-4">You can watch as much as you want, whenever you want without a single commercial - all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
-       
-        </AccordionContent>
-      </AccordionItem>
-
+          <p className="text-lg md:text-2xl">
+            Netflix is a streaming service that offers a wide variety of
+            award-winning TV shows, movies, anime, documentaries, and more on
+            thousands of internet-connected devices.
+          </p>
+          <p className="text-lg md:text-2xl mt-4">
+            You can watch as much as you want, whenever you want without a
+            single commercial - all for one low monthly price. There&apos;s
+            always something new to discover and new TV shows and movies are
+            added every week!
+          </p>
       <AccordionItem className="border-0 mb-2" value="item-2">
         <AccordionTrigger className="md:px-10 px-2 hover:no-underline font-normal md:text-2xl text-left text-lg bg-neutral-800 mb-1">How much does Netflix cost?</AccordionTrigger>
         <AccordionContent className="text-left py-4 bg-neutral-800 px-10">
