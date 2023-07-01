@@ -145,7 +145,7 @@ export default function Home() {
 
 
       <section className=" text-white text-center py-8 px-12 border-b-8 bg-black border-b-neutral-800">
-        <h3 className="text-3xl font-bold mb-3 mt-8">Frequently Asked Questions</h3>
+        <h3 className="text-3xl md:font-extrabold font-bold mb-3 mt-8">Frequently Asked Questions</h3>
           <Dropdown />
       </section>
 
