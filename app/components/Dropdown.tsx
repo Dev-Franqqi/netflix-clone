@@ -96,7 +96,7 @@ export default function Dropdown() {
             Kids profiles come with PIN-protected parental controls that let you
             restrict the maturity rating of content kids can watch and block
             specific titles you don&apos;t want kids to see.
-          </p>
+          </p>c
         </AccordionContent>
       </AccordionItem>
     </Accordion>
