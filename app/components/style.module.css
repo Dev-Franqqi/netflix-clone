@@ -28,4 +28,14 @@
   }
 
 
-  
+.almostFull{
+  width: 80%;
+  margin:auto
+}
+
+@media (min-width: 768px) {
+  .almostFull {
+      width:75%;
+     
+  }
+}

@@ -144,11 +144,15 @@ export default function Home() {
       </section>
 
 
-      <section className=" text-white text-center py-8 px-12 border-b-8 bg-black border-b-neutral-800">
-        <h3 className="text-3xl md:font-extrabold font-bold mb-3 mt-8">Frequently Asked Questions</h3>
+      <section className=" text-white text-center py-8  border-b-8 bg-black  border-b-neutral-800">
+        <h3 className="text-3xl md:font-extrabold font-bold mb-5 mt-8">Frequently Asked Questions</h3>
           <Dropdown />
+
+        <h3 className="text-center text-lg md:text-2xl px-4">Ready to watch? Enter your email to create or restart your membership.</h3>
+
       </section>
 
+     
       
 
     </main>
