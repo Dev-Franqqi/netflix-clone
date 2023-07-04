@@ -39,8 +39,9 @@ export default function page() {
 
               <div className="text-neutral-400 px-3 text-sm">
                 <p className="text-base mt-4">New to Netflix? <span className="text-white">Sign up now</span></p>
-                <p  className="mt-2">This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
-                <p className="mt-4">The information collected by Google reCAPTCHA is subject to the Google <span className="text-blue-600">Privacy Policy</span> and <span className="text-blue-600">Terms of Service</span>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalized advertising by Google).</p>
+                <p className="mt-4">New to Netflix? <span className="text-white">Sign up now</span></p>
+<p className="mt-2">This page is protected by Google reCAPTCHA to ensure you&apos;re not a bot.</p>
+
 
               </div>
           </form>
