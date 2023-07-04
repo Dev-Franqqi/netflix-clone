@@ -1,0 +1,19 @@
+.bac{
+  background-color: black;
+  @apply w-screen;
+  @apply h-screen;
+  @apply p-4
+  
+}
+  
+  @media (min-width: 768px) {
+    .bac {
+      background-image: url('../images/largeimage.jpg');
+      background-size: cover;
+     @apply object-cover;
+      background-color: transparent;
+      width: 100%;
+    height: 100%;
+    }
+  }
+  
