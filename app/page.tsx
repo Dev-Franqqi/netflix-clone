@@ -41,7 +41,7 @@ export default function Home() {
       <section className="px-4 w-screen h-full mt-10 py-6 mx-auto absolute top-1">
 
 
-        <div className="mb-20 w-full mx-auto px-5 flex justify-between md:px-40">
+        <div className="mb-16 w-full mx-auto px-5 flex justify-between md:px-40">
         <Image src={logo} alt=''className="md:w-36"  width={100} />
         {/* <Image src={logo} alt=''className=""  width={150} /> */}
        
@@ -57,7 +57,7 @@ export default function Home() {
          <p  className='px-12 mt-1 md:font-semibold md:text-xl'>Ready to watch? Enter your email to create or restart your membership.</p>
         
          <div className="flex items-center flex-col mt-7 md:flex-row max-w-lg md:mx-auto justify-around  space-x-2">
-      <Input type="email" className="py-6 w-full bg-transparent text-base bg-opacity-50 placeholder:text-gray-400" placeholder="Email address" />
+      <Input type="email" className="py-6 w-full bg-transparent text-base bg-opacity-50 border-neutral-600 placeholder:text-gray-400" placeholder="Email address" />
       <Button className=" mt-3  py-6 text-xl  md:mt-0  w-3/5 bg-red-600 hover:bg-red-600" type="submit">Get Started  <svg width="15" className="font-semibold mt-1" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></Button>
     </div>
 
@@ -152,7 +152,7 @@ export default function Home() {
     
        
         <div className="flex items-center flex-col mt-7 md:flex-row max-w-lg md:mx-auto justify-around  space-x-2">
-      <Input type="email" className="py-6 border border-green-500 w-full bg-transparent text-base bg-opacity-50 placeholder:text-gray-400" placeholder="Email address" />
+      <Input type="email" className="py-6 border border-green-500 w-5/6 bg-transparent text-base bg-opacity-50 placeholder:text-gray-400" placeholder="Email address" />
       <Button className=" mt-3  py-6 text-xl  md:mt-0  w-3/5 bg-red-600 hover:bg-red-600" type="submit">Get Started  <svg width="15" className="font-semibold mt-1" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></Button>
     </div>
 

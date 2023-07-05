@@ -2,7 +2,10 @@
   background-color: black;
   @apply w-screen;
   @apply h-screen;
-  @apply p-4
+  @apply pt-4;
+  @apply px-4;
+  @apply border-2;
+  @apply border-white;
   
 }
   
