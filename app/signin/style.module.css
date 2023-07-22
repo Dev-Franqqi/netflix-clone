@@ -1,11 +1,11 @@
 .bac{
   background-color: black;
-  @apply w-screen;
-  @apply h-screen;
+  
+  width: 98vw;
   @apply pt-4;
   @apply px-4;
-  @apply border-2;
-  @apply border-white;
+  @apply mb-6
+  
   
 }
   
@@ -16,7 +16,10 @@
      @apply object-cover;
       background-color: transparent;
       width: 100%;
-    height: 100%;
+    height: 100vh;
+    margin-bottom: 0;
+    @apply rounded-md;
+    @apply brightness-100
     }
   }
   
